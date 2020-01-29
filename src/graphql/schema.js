@@ -1,4 +1,7 @@
-export default`
+
+import { gql } from 'apollo-server-express';
+
+const typeDefs = gql`
   type Tweet {
     _id: String
     text: String
@@ -12,3 +15,5 @@ export default`
     query: Query
   }
 `;
+
+export default typeDefs;
